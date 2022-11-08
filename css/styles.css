@@ -1,0 +1,219 @@
+:root {
+  --primari-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primari-write-color: #f5f5f5;
+  --additional-background-color: #f5f4fa;
+  --white: #ffffff;
+  --services: #2f303a;
+  --black: #000000;
+}
+
+/* index */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primari-text-color);
+  background-color: var(--white);
+}
+
+h2,
+h3 {
+  color: var(--title-text-color);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  font-family: "Raleway", cursive;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.logo-desc {
+  color: var(--accent-color);
+}
+
+.mailto {
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primari-text-color);
+}
+
+.mailto:hover,
+.mailto:focus {
+  color: var(--accent-color);
+}
+
+.social-links .link {
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  color: var(--accent-color);
+}
+
+.social-links .link.current {
+  color: var(--accent-color);
+}
+
+.services {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--white);
+}
+
+.button.services {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--accent-color);
+}
+
+/* section */
+
+.hero {
+  background-color: var(--services);
+}
+
+ul {
+  list-style: none;
+}
+
+.section-features {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--primari-text-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.section-caption {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.section-products img,
+.section-portfolio img {
+  width: 370px;
+}
+
+.section-team {
+  letter-spacing: 0.03em;
+  background-color: var(--additional-background-color);
+}
+
+.section-team img {
+  width: 270px;
+}
+
+.section-user {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.seclion-specialty {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+.footer {
+  letter-spacing: 0.03em;
+  background-color: var(--services);
+}
+
+.logo-footer {
+  color: var(--white);
+}
+
+.address {
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.mailto-footer {
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mailto-footer:hover,
+.mailto-footer:focus {
+  color: var(--accent-color);
+}
+
+/* portfolio */
+
+.button.filter {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: var(--title-text-color);
+  background-color: var(--additional-background-color);
+}
+
+.button.filter:hover,
+.button.filter:focus {
+  color: var(--white);
+  background-color: var(--accent-color);
+}
+
+.portfolio {
+  text-decoration: none;
+}
+
+.section-work {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.section-project {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primari-text-color);
+}
