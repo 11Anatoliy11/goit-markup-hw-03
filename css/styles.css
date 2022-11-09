@@ -25,6 +25,14 @@ h3 {
   color: var(--title-text-color);
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .logo {
   font-weight: 700;
   font-size: 26px;
@@ -36,6 +44,11 @@ h3 {
 
 .logo-desc {
   color: var(--accent-color);
+}
+
+.container-mailto {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .mailto {
@@ -67,6 +80,8 @@ h3 {
 }
 
 .services {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -76,6 +91,7 @@ h3 {
 }
 
 .button.services {
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -90,6 +106,8 @@ h3 {
 /* section */
 
 .hero {
+  padding:200px 452px;
+  text-align: center;
   background-color: var(--services);
 }
 
@@ -98,12 +116,15 @@ ul {
 }
 
 .section-features {
+  padding: 0 215px 94px 215px;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--primari-text-color);
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -113,11 +134,22 @@ ul {
 }
 
 .section-caption {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.features-text {
+  margin-top: 0;
+  margin-bottom: 10px;  
+}
+
+.section-products {
+  padding: 0 215px 94px 215px;
 }
 
 .section-products img,
@@ -126,6 +158,7 @@ ul {
 }
 
 .section-team {
+  padding: 94px 215px 94px 215px;
   letter-spacing: 0.03em;
   background-color: var(--additional-background-color);
 }
@@ -135,6 +168,8 @@ ul {
 }
 
 .section-user {
+  margin-top: 10;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
@@ -142,6 +177,8 @@ ul {
 }
 
 .seclion-specialty {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
@@ -150,6 +187,7 @@ ul {
 
 /* footer */
 .footer {
+  padding: 60px 215px 60px 215px;
   letter-spacing: 0.03em;
   background-color: var(--services);
 }
@@ -179,7 +217,12 @@ ul {
 
 /* portfolio */
 
-.button.filter {
+.filter {
+  padding: 94px 512px;  
+}
+
+.button-filter {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: inherit;
   font-size: 16px;
@@ -203,6 +246,8 @@ ul {
 }
 
 .section-work {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -211,6 +256,8 @@ ul {
 }
 
 .section-project {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
