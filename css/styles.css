@@ -25,12 +25,19 @@ h3 {
   color: var(--title-text-color);
 }
 
+.header {}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -46,12 +53,18 @@ h3 {
   color: var(--accent-color);
 }
 
-.container-mailto {
-  margin-top: 0;
-  margin-bottom: 0;
+.header-mailto {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-mailto .item+.item {
+  margin-left: 50px;
 }
 
 .mailto {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -63,7 +76,16 @@ h3 {
   color: var(--accent-color);
 }
 
+.social-links {
+  margin-left: 93px;
+  display: flex;
+
+}
+
 .social-links .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -76,7 +98,19 @@ h3 {
 }
 
 .social-links .link.current {
+  display: flex;
   color: var(--accent-color);
+}
+
+.item+.item {
+  margin-left: 50px;
+}
+
+.hero {
+  margin-top: 0;
+  margin-bottom: 94px;
+  padding: 200px 0;
+  text-align: center;
 }
 
 .services {
@@ -106,8 +140,6 @@ h3 {
 /* section */
 
 .hero {
-  padding:200px 452px;
-  text-align: center;
   background-color: var(--services);
 }
 
@@ -116,7 +148,8 @@ ul {
 }
 
 .section-features {
-  padding: 0 215px 94px 215px;
+  margin-top: 0;
+  margin-bottom: 94px;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--primari-text-color);
@@ -133,6 +166,15 @@ ul {
   text-align: center;
 }
 
+.peculiarity {
+  display: flex;
+}
+
+.peculiarit .item+.item {
+  margin-left: 30px;
+}
+
+
 .section-caption {
   margin-top: 0;
   margin-bottom: 10px;
@@ -145,11 +187,12 @@ ul {
 
 .features-text {
   margin-top: 0;
-  margin-bottom: 10px;  
+  margin-bottom: 0px;
 }
 
 .section-products {
-  padding: 0 215px 94px 215px;
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
 .section-products img,
@@ -157,8 +200,19 @@ ul {
   width: 370px;
 }
 
+.imges {
+  display: flex;
+}
+
+.imges .item+.item {
+  margin-left: 30px;
+}
+
+
 .section-team {
-  padding: 94px 215px 94px 215px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 94px 215px;
   letter-spacing: 0.03em;
   background-color: var(--additional-background-color);
 }
@@ -167,27 +221,37 @@ ul {
   width: 270px;
 }
 
+.command {
+  display: flex;
+}
+
+.command .item+.item {
+  margin-left: 30px;
+}
+
 .section-user {
-  margin-top: 10;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .seclion-specialty {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* footer */
 .footer {
-  padding: 60px 215px 60px 215px;
+  padding: 60px 0;
   letter-spacing: 0.03em;
   background-color: var(--services);
 }
@@ -197,13 +261,23 @@ ul {
 }
 
 .address {
+  margin-top: 20px;
+  margin-bottom: 0px;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
   color: var(--white);
 }
 
+.address-mailto {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .mailto-footer {
+  margin-top: 0;
+  margin-bottom: 9px;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
@@ -217,11 +291,25 @@ ul {
 
 /* portfolio */
 
-.filter {
-  padding: 94px 512px;  
+.portfolio {
+  padding: 94px 0;
+
 }
 
-.button-filter {
+.works {
+  display: flex;
+  justify-content: center;
+}
+
+.works .item+.item {
+  margin-left: 8px;
+}
+
+.button.filter.first {
+  padding: 6px 25px;
+}
+
+.button.filter {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: inherit;
@@ -245,9 +333,30 @@ ul {
   text-decoration: none;
 }
 
+.section-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.section-portfolio .item {
+  width: 370px;
+  margin-left: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
+}
+
+.section-portfolio .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.section-portfolio .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .section-work {
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin: 20px 24px 4px 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -256,8 +365,7 @@ ul {
 }
 
 .section-project {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 24px 20px 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
