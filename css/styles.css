@@ -167,6 +167,12 @@ ul {
   color: var(--primari-text-color);
 }
 
+.hide {
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -248,7 +254,6 @@ ul {
   0px 1px 1px rgba(0, 0, 0, 0.14), 
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  border-color: ;
   margin: 0 15px;
 }
 
